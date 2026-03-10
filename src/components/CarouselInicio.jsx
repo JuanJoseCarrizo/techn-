@@ -11,15 +11,18 @@ function CarouselInicio() {
           <Carousel.Item>
             <Row >
               <Col md={4} >
-                <img className="carousel-img" src="/imagenes/canto.jpg" alt="img1" />
+                <img className="carousel-img" src={`${import.meta.env.BASE_URL}imagenes/canto.jpg`}
+                            alt="Imagen de carousel de canto"/>
               </Col>
 
               <Col md={4}>
-                <img className="carousel-img" src="/imagenes/dibujo.jpg" alt="img2" />
+                <img className="carousel-img" src={`${import.meta.env.BASE_URL}imagenes/dibujo.jpg`}
+                            alt="Imagen de carousel de dibujo"/>
               </Col>
 
               <Col md={4}>
-                <img className="carousel-img" src="/imagenes/piano.jpg" alt="img3" />
+                <img className="carousel-img" src={`${import.meta.env.BASE_URL}imagenes/piano.jpg`}
+                            alt="Imagen de carousel de piano"/>
               </Col>
             </Row>
           </Carousel.Item>
@@ -27,15 +30,18 @@ function CarouselInicio() {
           <Carousel.Item>
             <Row>
               <Col md={4}>
-                <img className="carousel-img" src="/imagenes/canto.jpg" alt="img4" />
+                <img className="carousel-img" src={`${import.meta.env.BASE_URL}imagenes/canto.jpg`}
+                            alt="Imagen de carousel de canto"/>
               </Col>
 
               <Col md={4}>
-                <img className="carousel-img" src="/imagenes/dibujo.jpg" alt="img5" />
+                <img className="carousel-img" src={`${import.meta.env.BASE_URL}imagenes/dibujo.jpg`}
+                            alt="Imagen de carousel de dibujo"/>
               </Col>
 
               <Col md={4}>
-                <img className="carousel-img" src="/imagenes/piano.jpg" alt="img6" />
+                <img className="carousel-img" src={`${import.meta.env.BASE_URL}imagenes/piano.jpg`}
+                            alt="Imagen de carousel de piano"/>
               </Col>
             </Row>
           </Carousel.Item>
@@ -48,15 +54,18 @@ function CarouselInicio() {
         <Carousel>
 
           <Carousel.Item>
-            <img className="carousel-img w-100" src="/imagenes/canto.jpg" />
+            <img className="carousel-img w-100" src={`${import.meta.env.BASE_URL}imagenes/canto.jpg`}
+                            alt="Imagen de carousel de canto"/>
           </Carousel.Item>
 
           <Carousel.Item>
-            <img className="carousel-img w-100" src="/imagenes/dibujo.jpg" />
+            <img className="carousel-img w-100" src={`${import.meta.env.BASE_URL}imagenes/dibujo.jpg`}
+                            alt="Imagen de carousel de dibujo"/>
           </Carousel.Item>
 
           <Carousel.Item>
-            <img className="carousel-img w-100" src="/imagenes/piano.jpg" />
+            <img className="carousel-img w-100" src={`${import.meta.env.BASE_URL}imagenes/piano.jpg`}
+                            alt="Imagen de carousel de piano"/>
           </Carousel.Item>
 
         </Carousel>

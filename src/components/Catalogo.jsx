@@ -9,10 +9,8 @@ function Catalogo() {
             {/* Imagen principal */}
             <div className="catalogo-banner">
                 <img
-                    src="/imagenes/banner-catalogo2.png"
-                    alt="Arte y creatividad"
-                    className="w-100"
-                />
+                src={`${import.meta.env.BASE_URL}imagenes/banner-catalogo2.png`}
+                            alt="Banner del catalogo" className="w-100"/>
             </div>
 
             {/* Introducción */}
@@ -31,55 +29,64 @@ function Catalogo() {
 
                 <div className="curso">
                     <Link to="/">
-                        <img src="/imagenes/curso-dibujo-pintura.jpg" className="w-100 mb-2" />
+                        <img src={`${import.meta.env.BASE_URL}imagenes/curso-dibujo-pintura.jpg`}
+                            alt="Curso de dibujo y pintura" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
                     <Link to="/">
-                        <img src="/imagenes/curso-piano.jpg" className="w-100 mb-2" />
+                        <img src={`${import.meta.env.BASE_URL}imagenes/curso-piano.jpg`}
+                            alt="Curso de piano" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
                     <Link to="/">
-                        <img src="/imagenes/curso-canto.jpg" className="w-100 mb-2" />
+                        <img src={`${import.meta.env.BASE_URL}imagenes/curso-canto.jpg`}
+                            alt="Curso de canto" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
                     <Link to="/">
-                        <img src="/imagenes/curso-violin.jpg" className="w-100 mb-2" />
+                        <img src={`${import.meta.env.BASE_URL}imagenes/curso-violin.jpg`}
+                            alt="Curso de violin" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
                     <Link to="/">
-                        <img src="/imagenes/curso-pintura-oleo.jpg" className="w-100 mb-2" />
+                        <img src={`${import.meta.env.BASE_URL}imagenes/curso-pintura-oleo.jpg`}
+                            alt="Curso de pintura al oleo" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
                     <Link to="/">
-                        <img src="/imagenes/curso-taller-ninos.jpg" className="w-100 mb-2" />
+                        <img src={`${import.meta.env.BASE_URL}imagenes/curso-taller-ninos.jpg`}
+                            alt="Taller de arte para niños" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
                     <Link to="/">
-                        <img src="/imagenes/curso-manga.jpg" className="w-100 mb-2" />
+                        <img src={`${import.meta.env.BASE_URL}imagenes/curso-manga.jpg`}
+                            alt="Curso de manga y diseño" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
                     <Link to="/">
-                        <img src="/imagenes/curso-yoga.jpg" className="w-100 mb-2" />
+                        <img src={`${import.meta.env.BASE_URL}imagenes/curso-yoga.jpg`}
+                            alt="Curso de yoga" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
                     <Link to="/">
-                        <img src="/imagenes/curso-urbano-fusion.jpg" className="w-100 mb-2" />
+                        <img src={`${import.meta.env.BASE_URL}imagenes/curso-urbano-fusion.jpg`}
+                            alt="Curso urbano fusión" className="w-100 mb-2" />
                     </Link>
                 </div>
 
