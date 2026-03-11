@@ -10,12 +10,18 @@
     font-style: normal;
 
     text-transform: none;
+    transition: color 0.25s ease;
     color: antiquewhite;
+}
+
+.navbar .logo-text:hover{
+    color: white;
 }
 
 .navbar .nav-link.nav-text{
     font-size: 1rem;
     position: relative;
+    transition: color 0.25s ease;
     
     font-family: 'Brygada 1918',serif;
     font-optical-sizing: auto;
@@ -26,7 +32,32 @@
     color: antiquewhite;
 }
 
-/* Agrega la barra */
+.navbar .nav-link.nav-text:hover{
+    color: white;
+    transform: scale(1.05);
+}
+
+.navbar .nav-link.nav-text::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    opacity: 0.9;
+    background-color: antiquewhite;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link.nav-text:hover::after{
+    width: 90%;
+    justify-content: center;
+}
+
+
+
+/* Agrega la barra 
 .navbar .nav-link.nav-text:not(:last-child)::after {
     content: "";
     height: 12px;
@@ -35,7 +66,7 @@
     vertical-align: middle;
 }
 
-/*  Saco la barra en mobile     */
+  Saco la barra en mobile     
 @media (min-width: 992px) {
 
   .nav-menu {
@@ -49,7 +80,7 @@
   .nav-menu .nav-link:not(:last-child)::after {
     content: "";
     position: absolute;
-    right: -20px; /* mitad del gap */
+    right: -20px; 
     top: 50%;
     transform: translateY(-50%);
     height: 18px;
@@ -59,7 +90,7 @@
 }
 
 
-
+*/
 
 /*      M A I N         */
 /*  SECTION INICIO  */
@@ -176,7 +207,44 @@
 
 
 
+/*      F O R M U L A R I O         */
+/************************************/
 
+.formularioContacto{
+    padding: 15% 0;
+
+    background-image: url("/imagenes/section cursos.jpg");
+    background-size: cover;       /* que cubra todo */
+    background-position: center;  /* centrada */
+    background-repeat: no-repeat; /* que no se repita */
+    width: 100%;
+
+}
+
+.formularioContacto h2{
+    margin: 25% 0;
+    font-family: 'Brygada 1918',serif;
+    font-optical-sizing: auto;
+    font-size:xx-large;
+    font-weight:500;
+    font-style: normal;
+    color: #3C3664;
+}
+
+.formularioContacto label{
+    color:#332e55;
+}
+
+.form-contacto{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+
+    background-color: #DECAC6;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
 
 
 /*------------ F O O T E R ------------*/
