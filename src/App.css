@@ -125,16 +125,30 @@
     min-height: 80vh;
 }
 
-.section-inicio button{
+.section-inicio .btn{
     background-color: #DC5A5C;
     font-size: 1rem;
     font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight:800;
-    font-style: normal;
+    font-weight: 800;
 
     color: antiquewhite;
-    text-transform: none;
+    border: none;
+
+    transition: all 0.2s ease;
+}
+
+.section-inicio .btn:hover{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background-color: #DC5A5C;
+    color: white;
+}
+
+.section-inicio .btn:focus,
+.section-inicio .btn:active,
+.section-inicio .btn:focus:active{
+    background-color: #DC5A5C;
+    color: white;
+    box-shadow: none;
 }
 
 

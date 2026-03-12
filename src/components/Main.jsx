@@ -1,5 +1,6 @@
 import React from "react"
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 
 const Main = () => {
@@ -12,9 +13,9 @@ const Main = () => {
                     <h1 className="fs-6 mt-3">Arte, movimiento y creatividad en un solo lugar</h1>
 
                     <div>
-                        <button className="btn mt-3 text-center">
+                        <Link className="btn mt-3" to="/catalogo">
                             Ver Clases
-                        </button>
+                        </Link>
                     </div>
 
                 </Container>
@@ -23,10 +24,10 @@ const Main = () => {
             <section className="section-2">
                 <Container>
                     <h3>¿Quiénes somos?</h3>
-                    
+
                     <div className="mt-4 pt-4">
-                    <h5>Somos un instituto de artes donde se combinan</h5>
-                    <h5>expresión, creatividad y bienestar.</h5>
+                        <h5>Somos un instituto de artes donde se combinan</h5>
+                        <h5>expresión, creatividad y bienestar.</h5>
                     </div>
                 </Container>
             </section>
