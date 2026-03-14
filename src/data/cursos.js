@@ -7,18 +7,33 @@ const cursos = [
     modalidad: "Una clase por semana",
     nivel: "Principiante",
     profesor: "Laura Touriño",
-    imagenProfesor: "/imagenes/profesores/laura_touriño.jpg"
-    bioProfesor: "Licenciada en artes"
+    imagenProfesor: "/imagenes/profesores/laura_touriño.jpg",
+    bioProfesor: "Licenciada en artes",
+
+    galeria: [
+      "/imagenes/galeria/dibujo1.jpg",
+      "/imagenes/galeria/dibujo2.jpg",
+      "/imagenes/galeria/dibujo3.jpg",
+      "/imagenes/galeria/dibujo4.jpg"
+    ]
   },
   {
     id: "pintura",
     titulo: "Curso de Pintura",
     descripcion: "Explora técnicas de color y composición.",
     imagen: "/imagenes/cursos/pintura.jpg",
-    duracion: "Una clase por semana",
+    modalidad: "Una clase por semana",
     nivel: "Intermedio",
     profesor: "Laura Touriño",
-    imagenProfesor: "/imagenes/profesores/laura_touriño.jpg"
+    imagenProfesor: "/imagenes/profesores/laura_touriño.jpg",
+    bioProfesor: "Licenciada en artes",
+
+    galeria: [
+      "/imagenes/galeria/dibujo1.jpg",
+      "/imagenes/galeria/dibujo2.jpg",
+      "/imagenes/galeria/dibujo3.jpg",
+      "/imagenes/galeria/dibujo4.jpg"
+    ]
   },
   {
     id: "piano",
@@ -28,7 +43,15 @@ const cursos = [
     modalidad: "Una clase por semana",
     nivel: "Principiante",
     profesor: "Belen Salinas",
-    imagenProfesor: "/imagenes/profesores/belen_salinas.jpg"
+    imagenProfesor: "/imagenes/profesores/belen_salinas.jpg",
+    bioProfesor: "Licenciada en artes",
+
+    galeria: [
+      "/imagenes/galeria/dibujo1.jpg",
+      "/imagenes/galeria/dibujo2.jpg",
+      "/imagenes/galeria/dibujo3.jpg",
+      "/imagenes/galeria/dibujo4.jpg"
+    ]
   },
   {
     id: "canto",
@@ -38,7 +61,15 @@ const cursos = [
     modalidad: "Una clase por semana",
     nivel: "Principiante",
     profesor: "Belen Salinas",
-    imagenProfesor: "/imagenes/profesores/andres_de_angelis.jpg"
+    imagenProfesor: "/imagenes/profesores/andres_de_angelis.jpg",
+    bioProfesor: "Licenciada en artes",
+
+    galeria: [
+      "/imagenes/galeria/dibujo1.jpg",
+      "/imagenes/galeria/dibujo2.jpg",
+      "/imagenes/galeria/dibujo3.jpg",
+      "/imagenes/galeria/dibujo4.jpg"
+    ]
   }
 ]
 

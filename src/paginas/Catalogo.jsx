@@ -28,14 +28,14 @@ function Catalogo() {
             <div className="catalogo-cursos">
 
                 <div className="curso">
-                    <Link to="/">
+                    <Link to="/Cursos">
                         <img src={`${import.meta.env.BASE_URL}imagenes/curso-dibujo-pintura.jpg`}
                             alt="Curso de dibujo y pintura" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
-                    <Link to="/">
+                    <Link to="/Cursos">
                         <img src={`${import.meta.env.BASE_URL}imagenes/curso-piano.jpg`}
                             alt="Curso de piano" className="w-100 mb-2" />
                     </Link>

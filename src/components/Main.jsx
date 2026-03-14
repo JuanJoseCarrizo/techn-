@@ -1,7 +1,7 @@
 import React from "react"
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import CarouselInicio from "./CarouselInicio";
 
 const Main = () => {
     return (
@@ -32,11 +32,11 @@ const Main = () => {
                 </Container>
             </section>
 
-            <section>
-                <Container>
-                    {/* contenido centrado */}
-                </Container>
+            <section className="section-3">
+                <h3 className="mt-5">Nuestras clases</h3>
+                <CarouselInicio />
             </section>
+
         </main>
     )
 }

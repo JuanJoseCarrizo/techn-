@@ -164,31 +164,45 @@
     background-repeat: no-repeat; /* que no se repita */
 }
 
-.section-2 h3, .section-2 h5{
+.section-2 h3, .section-2 h5 , .section-3 h3{
     color: #3C3664;
 }
 
 
 
 
-
-
 /*          C A R R U S E L         */
 /*************************************/
-.carousel{
+.section-3{
     background-image: url("/imagenes/section cursos.jpg");
     background-size: cover;       /* que cubra todo */
     background-position: center;  /* centrada */
     background-repeat: no-repeat; /* que no se repita */
+
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 60dvh;
 }
 
 .carousel-img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
 
+.carousel-img-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 4;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel h3{
+    color: #3C3664;
+}
 
 
 
@@ -210,14 +224,13 @@
 
 .curso img{
   cursor: pointer;
-  transition: transform 0.3s , box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .curso img:hover{
-  transform: scale(1.0060);
+  transform: translateY(-1px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
-
 
 
 
@@ -268,4 +281,69 @@
     background-size: cover;       /* que cubra todo */
     background-position: center;  /* centrada */
     background-repeat: no-repeat; /* que no se repita */
+}
+
+
+
+
+
+
+/******************************************************************************************************/
+/*                                        P A G I N A S                                               */
+
+
+/*************************************/
+/*           C U R S O S             */
+
+.curso-hero{
+  height: 380px;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 60px;
+
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.65), rgba(0,0,0,0.2)),
+    url("/imagenes/cursos/banner-dibujo-pintura.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.curso-hero h1{
+  font-size: 2.6rem;
+  max-width: 600px;
+}
+
+.curso-hero p{
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+.hero-overlay{
+  color: white;
+  padding-left: 60px;
+}
+
+
+
+/******************/
+.curso-info{
+  background: #f3f3f3;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+/******************/
+.profesor{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profesor img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
 }

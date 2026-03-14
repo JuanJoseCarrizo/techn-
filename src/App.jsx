@@ -1,15 +1,15 @@
 import { Routes , Route } from 'react-router-dom'
 
 import Navigation from './components/Nav'
-import CarouselInicio from './components/CarouselInicio'
 import Main from './components/Main'
-import Catalogo from './components/Catalogo'
+import Catalogo from './paginas/Catalogo'
 import FormularioControlado from './components/Formularios/FormularioControlado'
 import Footer from './components/Footer'
 import './App.css'
 
+{/*PAGINAS*/}
 
-
+import Cursos from './paginas/Cursos'
 
 
 function App() {
@@ -21,13 +21,13 @@ function App() {
           path="/" element={
             <>
               <Main />
-              <CarouselInicio />
               <FormularioControlado/>
             </>
           }
         />
 
         <Route path="/Catalogo" element={<Catalogo />} />
+        <Route path="/Cursos" element={<Cursos />} />
       </Routes>
 
 
