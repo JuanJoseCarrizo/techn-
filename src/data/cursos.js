@@ -1,9 +1,16 @@
+const base = import.meta.env.BASE_URL;
+
 const cursos = [
   {
+
+
+      
+/////////////////////////  DIBUJO PINTURA   ////////////////////////
+
     id: "dibujo-pintura",
     titulo: "Curso de Dibujo",
     subTitulo: "Aprende los fundamentos de dibujo y pintura",
-    descripcion: "Aqui va la descrion del curso, orientación y demás.",
+    descripcion: "Aqui va la descripcion del curso, orientación y demás.",
 
     programa: [
       "Objetivo numero 1",
@@ -16,152 +23,361 @@ const cursos = [
     horario: "19 hs",
     modalidad: "Una clase por semana",
 
-    imagen: `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/banner-dibujo-pintura.png`,
+    // banner de la página del curso
+    imagen: `${base}imagenes/cursos/dibujo-pintura/banner-dibujo-pintura.png`,
+
+    // imagen que se usa en el catálogo
+    imagenCatalogo: `${base}imagenes/cursos/dibujo-pintura/curso-dibujo-pintura.jpg`,
 
     nivel: "Principiante",
 
     nombreProfesor: "Laura Touriño",
+
     descripcionProfesor: [
       "Licenciada en artes",
       "Más de 10 años de experiencia enseñando"
     ],
 
-
-    imagenProfesor: `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/laura.jpg`,
+    imagenProfesor: `${base}imagenes/cursos/dibujo-pintura/laura.jpg`,
 
     galeria: [
-      `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/muestra-1.jpg`,
-      `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/muestra-2.jpg`,
-      `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/muestra-3.jpg`,
-      `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/muestra-4.jpg`,
+      `${base}imagenes/cursos/dibujo-pintura/muestra-1.jpg`,
+      `${base}imagenes/cursos/dibujo-pintura/muestra-2.jpg`,
+      `${base}imagenes/cursos/dibujo-pintura/muestra-3.jpg`,
+      `${base}imagenes/cursos/dibujo-pintura/muestra-4.jpg`
     ]
   },
 
-  /////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+/////////////////////////  PINTURA OLEO   ////////////////////////
 
   {
     id: "pintura-oleo",
     titulo: "Curso de Pintura",
     subTitulo: "Aprende los fundamentos de dibujo y pintura",
-    descripcion: "Aqui va la descrion del curso, orientación y demás.",
+    descripcion: "Aqui va la descripcion del curso, orientación y demás.",
 
     programa: [
       "Objetivo numero 1",
       "Objetivo numero 2",
       "Objetivo numero 3",
       "Objetivo numero 4"
-
     ],
-
-
-
-
 
     dias: "Lunes a Sábados",
     horario: "19 hs",
     modalidad: "Una clase por semana",
 
+    imagen: `${base}imagenes/cursos/pintura/banner-pintura.jpg`,
+    imagenCatalogo: `${base}imagenes/cursos/pintura-oleo/curso-pintura-oleo.jpg`,
 
-    imagen: "/imagenes/cursos/pintura.jpg",
     nivel: "Intermedio",
 
-
-
     nombreProfesor: "Laura Touriño",
+
     descripcionProfesor: [
       "Licenciada en artes",
       "Más de 10 años de experiencia enseñando"
     ],
 
-
-    imagenProfesor: "/imagenes/profesores/laura_touriño.jpg",
+    imagenProfesor: `${base}imagenes/profesores/laura_tourino.jpg`,
 
     galeria: [
-      "/imagenes/galeria/dibujo1.jpg",
-      "/imagenes/galeria/dibujo2.jpg",
-      "/imagenes/galeria/dibujo3.jpg",
-      "/imagenes/galeria/dibujo4.jpg"
+      `${base}imagenes/cursos/pintura/muestra-1.jpg`,
+      `${base}imagenes/cursos/pintura/muestra-2.jpg`,
+      `${base}imagenes/cursos/pintura/muestra-3.jpg`,
+      `${base}imagenes/cursos/pintura/muestra-4.jpg`
     ]
   },
 
-  /////////////////////////////////////////////////////////////////////////////////
 
+
+
+
+
+
+  
+/////////////////////////  PIANO   ////////////////////////
 
   {
     id: "piano",
     titulo: "Curso de Piano",
-    subTitulo: "Aprende los fundamentos de dibujo y pintura",
-    descripcion: "Aqui va la descrion del curso, orientación y demás.",
+    subTitulo: "Aprende los fundamentos del piano",
+    descripcion: "Aqui va la descripcion del curso, orientación y demás.",
 
     programa: [
-      "Objetivo numero 1",
-      "Objetivo numero 2",
-      "Objetivo numero 3",
-      "Objetivo numero 4"
-
+      "Lectura musical",
+      "Técnica básica",
+      "Interpretación"
     ],
 
-
-    dias: "Lunes a Sábados",
-    horario: "19 hs",
+    dias: "Martes",
+    horario: "18 hs",
     modalidad: "Una clase por semana",
 
-    imagen: "/imagenes/cursos/piano.jpg",
+    imagen: `${base}imagenes/cursos/piano/banner-piano.jpg`,
+    imagenCatalogo: `${base}imagenes/cursos/piano/curso-piano.jpg`,
+
     nivel: "Principiante",
 
-    nombreProfesor: "Laura Touriño",
+    nombreProfesor: "Belén Salinas",
+
     descripcionProfesor: [
-      "Licenciada en artes",
-      "Más de 10 años de experiencia enseñando"
+      "Pianista profesional",
+      "10 años de experiencia docente"
     ],
 
-    imagenProfesor: "/imagenes/profesores/belen_salinas.jpg",
+    imagenProfesor: `${base}imagenes/profesores/belen_salinas.jpg`,
 
     galeria: [
-      "/imagenes/galeria/dibujo1.jpg",
-      "/imagenes/galeria/dibujo2.jpg",
-      "/imagenes/galeria/dibujo3.jpg",
-      "/imagenes/galeria/dibujo4.jpg"
+      `${base}imagenes/cursos/piano/muestra-1.jpg`,
+      `${base}imagenes/cursos/piano/muestra-2.jpg`,
+      `${base}imagenes/cursos/piano/muestra-3.jpg`,
+      `${base}imagenes/cursos/piano/muestra-4.jpg`
     ]
   },
 
-  /////////////////////////////////////////////////////////////////////////////////
 
+
+
+
+
+
+
+
+  
+/////////////////////////  PINTURA CANTO   ////////////////////////
 
   {
     id: "canto",
     titulo: "Curso de Canto",
-    subTitulo: "Aprende los fundamentos de dibujo y pintura",
-    descripcion: "Aqui va la descrion del curso, orientación y demás.",
+    subTitulo: "Técnica vocal y expresión",
+    descripcion: "Aqui va la descripcion del curso, orientación y demás.",
 
     programa: [
-      "Objetivo numero 1",
-      "Objetivo numero 2",
-      "Objetivo numero 3",
-      "Objetivo numero 4"
-
+      "Respiración",
+      "Afinación",
+      "Interpretación"
     ],
 
-    dias: "Lunes a Sábados",
+    dias: "Miércoles",
     horario: "19 hs",
     modalidad: "Una clase por semana",
 
-    imagen: "/imagenes/cursos/canto.jpg",
+    imagen: `${base}imagenes/cursos/canto/banner-canto.jpg`,
+    imagenCatalogo: `${base}imagenes/cursos/canto/curso-canto.jpg`,
+
     nivel: "Principiante",
 
-    nombreProfesor: "Laura Touriño",
+    nombreProfesor: "Andrés De Angelis",
+
     descripcionProfesor: [
-      "Licenciada en artes",
-      "Más de 10 años de experiencia enseñando"
+      "Cantante profesional",
+      "Docente de técnica vocal"
     ],
 
-    imagenProfesor: "/imagenes/profesores/andres_de_angelis.jpg",
+    imagenProfesor: `${base}imagenes/profesores/andres_de_angelis.jpg`,
 
     galeria: [
-      "/imagenes/galeria/dibujo1.jpg",
-      "/imagenes/galeria/dibujo2.jpg",
-      "/imagenes/galeria/dibujo3.jpg",
-      "/imagenes/galeria/dibujo4.jpg"
+      `${base}imagenes/cursos/canto/muestra-1.jpg`,
+      `${base}imagenes/cursos/canto/muestra-2.jpg`,
+      `${base}imagenes/cursos/canto/muestra-3.jpg`,
+      `${base}imagenes/cursos/canto/muestra-4.jpg`
+    ]
+  },
+
+
+
+
+
+
+
+
+    
+/////////////////////////  M A N G A   ////////////////////////
+
+  {
+    id: "manga",
+    titulo: "Curso de Canto",
+    subTitulo: "Técnica vocal y expresión",
+    descripcion: "Aqui va la descripcion del curso, orientación y demás.",
+
+    programa: [
+      "Respiración",
+      "Afinación",
+      "Interpretación"
+    ],
+
+    dias: "Miércoles",
+    horario: "19 hs",
+    modalidad: "Una clase por semana",
+
+    imagen: `${base}imagenes/cursos/canto/banner-canto.jpg`,
+    imagenCatalogo: `${base}imagenes/cursos/manga/curso-manga.jpg`,
+
+    nivel: "Principiante",
+
+    nombreProfesor: "Andrés De Angelis",
+
+    descripcionProfesor: [
+      "Cantante profesional",
+      "Docente de técnica vocal"
+    ],
+
+    imagenProfesor: `${base}imagenes/profesores/andres_de_angelis.jpg`,
+
+    galeria: [
+      `${base}imagenes/cursos/canto/muestra-1.jpg`,
+      `${base}imagenes/cursos/canto/muestra-2.jpg`,
+      `${base}imagenes/cursos/canto/muestra-3.jpg`,
+      `${base}imagenes/cursos/canto/muestra-4.jpg`
+    ]
+  },
+
+
+
+
+
+
+
+
+  
+/////////////////////////  PINTURA TALLER PARA NIÑOS   ////////////////////////
+
+  {
+    id: "taller-ninos",
+    titulo: "Curso de Canto",
+    subTitulo: "Técnica vocal y expresión",
+    descripcion: "Aqui va la descripcion del curso, orientación y demás.",
+
+    programa: [
+      "Respiración",
+      "Afinación",
+      "Interpretación"
+    ],
+
+    dias: "Miércoles",
+    horario: "19 hs",
+    modalidad: "Una clase por semana",
+
+    imagen: `${base}imagenes/cursos/canto/banner-canto.jpg`,
+    imagenCatalogo: `${base}imagenes/cursos/taller-ninos/curso-taller-ninos.jpg`,
+
+    nivel: "Principiante",
+
+    nombreProfesor: "Andrés De Angelis",
+
+    descripcionProfesor: [
+      "Cantante profesional",
+      "Docente de técnica vocal"
+    ],
+
+    imagenProfesor: `${base}imagenes/profesores/andres_de_angelis.jpg`,
+
+    galeria: [
+      `${base}imagenes/cursos/canto/muestra-1.jpg`,
+      `${base}imagenes/cursos/canto/muestra-2.jpg`,
+      `${base}imagenes/cursos/canto/muestra-3.jpg`,
+      `${base}imagenes/cursos/canto/muestra-4.jpg`
+    ]
+  },
+
+
+
+
+
+
+    
+/////////////////////////  Y  O  G  A   ////////////////////////
+
+  {
+    id: "yoga",
+    titulo: "Curso de Canto",
+    subTitulo: "Técnica vocal y expresión",
+    descripcion: "Aqui va la descripcion del curso, orientación y demás.",
+
+    programa: [
+      "Respiración",
+      "Afinación",
+      "Interpretación"
+    ],
+
+    dias: "Miércoles",
+    horario: "19 hs",
+    modalidad: "Una clase por semana",
+
+    imagen: `${base}imagenes/cursos/canto/banner-canto.jpg`,
+    imagenCatalogo: `${base}imagenes/cursos/yoga/curso-yoga.jpg`,
+
+    nivel: "Principiante",
+
+    nombreProfesor: "Andrés De Angelis",
+
+    descripcionProfesor: [
+      "Cantante profesional",
+      "Docente de técnica vocal"
+    ],
+
+    imagenProfesor: `${base}imagenes/profesores/andres_de_angelis.jpg`,
+
+    galeria: [
+      `${base}imagenes/cursos/canto/muestra-1.jpg`,
+      `${base}imagenes/cursos/canto/muestra-2.jpg`,
+      `${base}imagenes/cursos/canto/muestra-3.jpg`,
+      `${base}imagenes/cursos/canto/muestra-4.jpg`
+    ]
+  },
+
+
+
+
+
+
+
+
+
+    
+/////////////////////////  PINTURA URGANO FUSION   ////////////////////////
+
+  {
+    id: "urbano-fusion",
+    titulo: "Curso de Canto",
+    subTitulo: "Técnica vocal y expresión",
+    descripcion: "Aqui va la descripcion del curso, orientación y demás.",
+
+    programa: [
+      "Respiración",
+      "Afinación",
+      "Interpretación"
+    ],
+
+    dias: "Miércoles",
+    horario: "19 hs",
+    modalidad: "Una clase por semana",
+
+    imagen: `${base}imagenes/cursos/canto/banner-canto.jpg`,
+    imagenCatalogo: `${base}imagenes/cursos/urbano-fusion/curso-urbano-fusion.jpg`,
+
+    nivel: "Principiante",
+
+    nombreProfesor: "Andrés De Angelis",
+
+    descripcionProfesor: [
+      "Cantante profesional",
+      "Docente de técnica vocal"
+    ],
+
+    imagenProfesor: `${base}imagenes/profesores/andres_de_angelis.jpg`,
+
+    galeria: [
+      `${base}imagenes/cursos/canto/muestra-1.jpg`,
+      `${base}imagenes/cursos/canto/muestra-2.jpg`,
+      `${base}imagenes/cursos/canto/muestra-3.jpg`,
+      `${base}imagenes/cursos/canto/muestra-4.jpg`
     ]
   }
 ]
