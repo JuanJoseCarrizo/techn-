@@ -1,32 +1,80 @@
 const cursos = [
   {
-    id: "dibujo",
+    id: "dibujo-pintura",
     titulo: "Curso de Dibujo",
-    descripcion: "Aprende los fundamentos del dibujo artístico.",
-    imagen: "/imagenes/cursos/dibujo.jpg",
+    subTitulo: "Aprende los fundamentos de dibujo y pintura",
+    descripcion: "Aqui va la descrion del curso, orientación y demás.",
+
+    programa: [
+      "Objetivo numero 1",
+      "Objetivo numero 2",
+      "Objetivo numero 3",
+      "Objetivo numero 4"
+    ],
+
+    dias: "Lunes a Sábados",
+    horario: "19 hs",
     modalidad: "Una clase por semana",
+
+    imagen: `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/banner-dibujo-pintura.png`,
+
     nivel: "Principiante",
-    profesor: "Laura Touriño",
-    imagenProfesor: "/imagenes/profesores/laura_touriño.jpg",
-    bioProfesor: "Licenciada en artes",
+
+    nombreProfesor: "Laura Touriño",
+    descripcionProfesor: [
+      "Licenciada en artes",
+      "Más de 10 años de experiencia enseñando"
+    ],
+
+
+    imagenProfesor: `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/laura.jpg`,
 
     galeria: [
-      "/imagenes/galeria/dibujo1.jpg",
-      "/imagenes/galeria/dibujo2.jpg",
-      "/imagenes/galeria/dibujo3.jpg",
-      "/imagenes/galeria/dibujo4.jpg"
+      `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/muestra-1.jpg`,
+      `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/muestra-2.jpg`,
+      `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/muestra-3.jpg`,
+      `${import.meta.env.BASE_URL}imagenes/cursos/dibujo-pintura/muestra-4.jpg`,
     ]
   },
+
+  /////////////////////////////////////////////////////////////////////////////////
+
   {
-    id: "pintura",
+    id: "pintura-oleo",
     titulo: "Curso de Pintura",
-    descripcion: "Explora técnicas de color y composición.",
-    imagen: "/imagenes/cursos/pintura.jpg",
+    subTitulo: "Aprende los fundamentos de dibujo y pintura",
+    descripcion: "Aqui va la descrion del curso, orientación y demás.",
+
+    programa: [
+      "Objetivo numero 1",
+      "Objetivo numero 2",
+      "Objetivo numero 3",
+      "Objetivo numero 4"
+
+    ],
+
+
+
+
+
+    dias: "Lunes a Sábados",
+    horario: "19 hs",
     modalidad: "Una clase por semana",
+
+
+    imagen: "/imagenes/cursos/pintura.jpg",
     nivel: "Intermedio",
-    profesor: "Laura Touriño",
+
+
+
+    nombreProfesor: "Laura Touriño",
+    descripcionProfesor: [
+      "Licenciada en artes",
+      "Más de 10 años de experiencia enseñando"
+    ],
+
+
     imagenProfesor: "/imagenes/profesores/laura_touriño.jpg",
-    bioProfesor: "Licenciada en artes",
 
     galeria: [
       "/imagenes/galeria/dibujo1.jpg",
@@ -35,16 +83,39 @@ const cursos = [
       "/imagenes/galeria/dibujo4.jpg"
     ]
   },
+
+  /////////////////////////////////////////////////////////////////////////////////
+
+
   {
     id: "piano",
     titulo: "Curso de Piano",
-    descripcion: "Aprende las bases de técnica, lectura musical y expresión interpretativa.",
-    imagen: "/imagenes/cursos/piano.jpg",
+    subTitulo: "Aprende los fundamentos de dibujo y pintura",
+    descripcion: "Aqui va la descrion del curso, orientación y demás.",
+
+    programa: [
+      "Objetivo numero 1",
+      "Objetivo numero 2",
+      "Objetivo numero 3",
+      "Objetivo numero 4"
+
+    ],
+
+
+    dias: "Lunes a Sábados",
+    horario: "19 hs",
     modalidad: "Una clase por semana",
+
+    imagen: "/imagenes/cursos/piano.jpg",
     nivel: "Principiante",
-    profesor: "Belen Salinas",
+
+    nombreProfesor: "Laura Touriño",
+    descripcionProfesor: [
+      "Licenciada en artes",
+      "Más de 10 años de experiencia enseñando"
+    ],
+
     imagenProfesor: "/imagenes/profesores/belen_salinas.jpg",
-    bioProfesor: "Licenciada en artes",
 
     galeria: [
       "/imagenes/galeria/dibujo1.jpg",
@@ -53,16 +124,38 @@ const cursos = [
       "/imagenes/galeria/dibujo4.jpg"
     ]
   },
+
+  /////////////////////////////////////////////////////////////////////////////////
+
+
   {
     id: "canto",
     titulo: "Curso de Canto",
-    descripcion: "Aprende las bases de técnica, lectura musical y expresión.",
-    imagen: "/imagenes/cursos/canto.jpg",
+    subTitulo: "Aprende los fundamentos de dibujo y pintura",
+    descripcion: "Aqui va la descrion del curso, orientación y demás.",
+
+    programa: [
+      "Objetivo numero 1",
+      "Objetivo numero 2",
+      "Objetivo numero 3",
+      "Objetivo numero 4"
+
+    ],
+
+    dias: "Lunes a Sábados",
+    horario: "19 hs",
     modalidad: "Una clase por semana",
+
+    imagen: "/imagenes/cursos/canto.jpg",
     nivel: "Principiante",
-    profesor: "Belen Salinas",
+
+    nombreProfesor: "Laura Touriño",
+    descripcionProfesor: [
+      "Licenciada en artes",
+      "Más de 10 años de experiencia enseñando"
+    ],
+
     imagenProfesor: "/imagenes/profesores/andres_de_angelis.jpg",
-    bioProfesor: "Licenciada en artes",
 
     galeria: [
       "/imagenes/galeria/dibujo1.jpg",

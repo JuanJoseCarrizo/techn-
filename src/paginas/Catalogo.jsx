@@ -28,63 +28,63 @@ function Catalogo() {
             <div className="catalogo-cursos">
 
                 <div className="curso">
-                    <Link to="/Cursos">
+                    <Link to={`/curso/dibujo-pintura`}>
                         <img src={`${import.meta.env.BASE_URL}imagenes/curso-dibujo-pintura.jpg`}
                             alt="Curso de dibujo y pintura" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
-                    <Link to="/Cursos">
+                    <Link to={`/curso/piano`}>
                         <img src={`${import.meta.env.BASE_URL}imagenes/curso-piano.jpg`}
                             alt="Curso de piano" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
-                    <Link to="/">
+                    <Link to={`/curso/canto`}>
                         <img src={`${import.meta.env.BASE_URL}imagenes/curso-canto.jpg`}
                             alt="Curso de canto" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
-                    <Link to="/">
+                    <Link to={`/curso/violin`}>
                         <img src={`${import.meta.env.BASE_URL}imagenes/curso-violin.jpg`}
                             alt="Curso de violin" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
-                    <Link to="/">
+                    <Link to={`/curso/pintura-oleo`}>
                         <img src={`${import.meta.env.BASE_URL}imagenes/curso-pintura-oleo.jpg`}
                             alt="Curso de pintura al oleo" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
-                    <Link to="/">
+                    <Link to={`/curso/taller-ninos`}>
                         <img src={`${import.meta.env.BASE_URL}imagenes/curso-taller-ninos.jpg`}
                             alt="Taller de arte para niños" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
-                    <Link to="/">
+                    <Link to={`/curso/manga`}>
                         <img src={`${import.meta.env.BASE_URL}imagenes/curso-manga.jpg`}
                             alt="Curso de manga y diseño" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
-                    <Link to="/">
+                    <Link to={`/curso/yoga`}>
                         <img src={`${import.meta.env.BASE_URL}imagenes/curso-yoga.jpg`}
                             alt="Curso de yoga" className="w-100 mb-2" />
                     </Link>
                 </div>
 
                 <div className="curso">
-                    <Link to="/">
+                    <Link to={`/curso/urbano-fusion`}>
                         <img src={`${import.meta.env.BASE_URL}imagenes/curso-urbano-fusion.jpg`}
                             alt="Curso urbano fusión" className="w-100 mb-2" />
                     </Link>

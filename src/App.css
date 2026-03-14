@@ -295,7 +295,8 @@
 /*************************************/
 /*           C U R S O S             */
 
-.curso-hero{
+.curso-hero {
+
   height: 380px;
   display: flex;
   align-items: center;
@@ -303,12 +304,12 @@
   padding-left: 60px;
 
   background-image: 
-    linear-gradient(to right, rgba(0,0,0,0.65), rgba(0,0,0,0.2)),
-    url("/imagenes/cursos/banner-dibujo-pintura.png");
+    linear-gradient(to right, rgba(0,0,0,0.65), rgba(0,0,0,0.2));
 
   background-size: cover;
   background-position: center;
 }
+
 
 .curso-hero h1{
   font-size: 2.6rem;
@@ -338,12 +339,13 @@
 .profesor{
   display: flex;
   align-items: center;
+  justify-content:left;
   gap: 20px;
 }
 
 .profesor img{
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
 }

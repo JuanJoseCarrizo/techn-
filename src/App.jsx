@@ -27,7 +27,7 @@ function App() {
         />
 
         <Route path="/Catalogo" element={<Catalogo />} />
-        <Route path="/Cursos" element={<Cursos />} />
+        <Route path="/curso/:id" element={<Cursos />} />
       </Routes>
 
 

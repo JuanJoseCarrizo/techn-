@@ -1,15 +1,35 @@
 import React from "react";
+import { useParams } from "react-router-dom"
+import cursos from "../data/cursos"
 
 const Cursos = () => {
+
+    // 1️⃣ obtenemos el id desde la URL
+    const { id } = useParams()
+
+    // 2️⃣ buscamos el curso correspondiente en cursos.js
+    const curso = cursos.find(c => c.id === id)
+
+    // 3️⃣ si no existe el curso evitamos que la página rompa
+    if (!curso) {
+        return <h2>Curso no encontrado</h2>
+    }
+
 
     return (
         <>
 
             {/* HERO */}
-            <section className="curso-hero">
+            <section
+                className="curso-hero"
+                style={{
+                    backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.65), rgba(0,0,0,0.2)), 
+                    url(${curso.imagen})`
+                }}>
+
                 <div className="hero-overlay">
-                    <h1>Curso de Pintura Artística</h1>
-                    <p>Desarrolla tu creatividad con la pintura</p>
+                    <h1>{curso.titulo}</h1>
+                    <p>{curso.subTitulo}</p>
                     <button className="btn btn-warning">Inscribirse</button>
                 </div>
             </section>
@@ -22,14 +42,13 @@ const Cursos = () => {
 
                     <div className="col-md-8">
                         <h3>Sobre el Curso</h3>
-                        <p>Descripción del curso...</p>
+                        <p>{curso.descripcion}</p>
 
                         <h3 className="mt-4">Programa del Curso</h3>
                         <ul>
-                            <li>Introducción a las técnicas</li>
-                            <li>Teoría del color</li>
-                            <li>Pintura al óleo y acrílico</li>
-                            <li>Composición y perspectiva</li>
+                            {curso.programa.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
                         </ul>
                     </div>
 
@@ -37,9 +56,9 @@ const Cursos = () => {
                         <div className="curso-info">
                             <h4>Información del Curso</h4>
                             <ul>
-                                <li>Duración: 8 semanas</li>
-                                <li>Horario: Martes y Jueves</li>
-                                <li>Nivel: Principiante</li>
+                                <li>Días: {curso.dias}</li>
+                                <li>Horario: {curso.horario}</li>
+                                <li>Modalidad: {curso.modalidad}</li>
                                 <li>Cupo limitado</li>
                             </ul>
                         </div>
@@ -51,13 +70,16 @@ const Cursos = () => {
 
 
             {/* PROFESOR */}
-            <div className="profesor">
-                <img src="/imagenes/profesora.jpg" />
+            <div className="profesor container py-5">
+                <img src={curso.imagenProfesor} alt={curso.nombreProfesor} />
 
                 <div>
-                    <h4>Marta Gómez</h4>
-                    <p>Artista y profesora</p>
-                    <p>Con más de 10 años enseñando pintura.</p>
+                    <h4>{curso.nombreProfesor}</h4>
+
+                    {curso.descripcionProfesor.map((parrafoDescriptivo, index) => (
+                        <p key={index}> {parrafoDescriptivo} </p>
+                    ))}
+
                 </div>
             </div>
 
@@ -65,22 +87,22 @@ const Cursos = () => {
 
 
             {/* GALERIA */}
-            <div className="row g-3">
+            <div className="container py-5">
 
-                <div className="col-md-3">
-                    <img src="/imagenes/trabajo1.jpg" className="img-fluid" />
-                </div>
+                <div className="row g-3">
 
-                <div className="col-md-3">
-                    <img src="/imagenes/trabajo2.jpg" className="img-fluid" />
-                </div>
+                    {curso.galeria.map((img, index) => (
 
-                <div className="col-md-3">
-                    <img src="/imagenes/trabajo3.jpg" className="img-fluid" />
-                </div>
+                        <div className="col-md-3" key={index}>
+                            <img
+                                src={img}
+                                className="img-fluid"
+                                alt={`Imagen del curso ${curso.titulo}`}
+                            />
+                        </div>
 
-                <div className="col-md-3">
-                    <img src="/imagenes/trabajo4.jpg" className="img-fluid" />
+                    ))}
+
                 </div>
 
             </div>
