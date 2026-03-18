@@ -3,10 +3,10 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Container } from "react-bootstrap";
 
 function InfoContacto() {
-    const telefono = "5491112345678";
+    const telefono = "5491124959473";
 
     const mensaje = encodeURIComponent(
-        "Hola! Estoy interesado en los cursos de Téchne. Me gustaría recibir más información."
+        "Hola! Estoy interesado en los cursos de Téchne. Me gustaría recibir más información sobre el curso: "
     );
 
     const whatsappLink = `https://wa.me/${telefono}?text=${mensaje}`;
@@ -18,25 +18,25 @@ function InfoContacto() {
                 <div className="info-contacto">
 
                     <div>
-                        <h2 className="text-center mt-1">Información de contacto</h2>
+                        <h2 className="text-center mt-1 fs-2">Información de contacto</h2>
 
-                        <p className="mb-2">
+                        <p className="mb-2 fs-6">
                             📍 <strong>Dirección:</strong><br />
                             Calle Falsa 123, Buenos Aires
                         </p>
 
-                        <p className="mb-2">
+                        <p className="mb-2 fs-6">
                             ☎ <strong>Teléfono:</strong><br />
                             +54 11 1234-5678
                         </p>
 
-                        <p className="mb-4">
+                        <p className="mb-4 fs-6">
                             ✉ <strong>Email:</strong><br />
                             info@techne.com
                         </p>
                     </div>
 
-                    <div className="mt-4">
+                    <div className="mt-4 fs-6">
                         <p className="mb-2"><strong>¿Prefieres una respuesta rápida?</strong></p>
 
                         <a

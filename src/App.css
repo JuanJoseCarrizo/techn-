@@ -251,7 +251,7 @@
 }
 
 .formularioContacto h2{
-    margin: 25% 0;
+    margin: 0 0 3em 0;
     font-family: 'Brygada 1918',serif;
     font-optical-sizing: auto;
     font-size:xx-large;
@@ -268,13 +268,22 @@
 .form-contacto{
     width: 100%;
     max-width: 500px;
+    min-height: 519px;
     padding: 30px;
 
-    background-color: #DECAC6;
+    background: linear-gradient(
+        120deg,
+        #DECAC6,
+        #D6C3E5,
+        #CDE3D8
+    );
+    border-radius: 12px;background-color: #DECAC6;
     border-radius: 10px;
 
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
+
+
 
 
 
@@ -292,11 +301,18 @@
 
 .info-contacto {
     width: 100%;
+    height: 100%;
     max-width: 500px;
+    min-height: 519px;
     padding: 30px;
 
-    background-color: #DECAC6;
-    border-radius: 10px;
+    background: linear-gradient(
+        120deg,
+        #DECAC6,
+        #D6C3E5,
+        #CDE3D8
+    );
+    border-radius: 12px;
 
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 
@@ -305,16 +321,18 @@
     justify-content: space-between;
 }
 
+
 /* título igual al formulario */
 .info-contacto h2 {
-    margin: 25% 0;
+    margin: 0 0 3em 0;
+    text-align: center;
     font-family: 'Brygada 1918', serif;
-    font-size: xx-large;
     font-weight: 500;
     color: #3C3664;
 }
 
 .info-contacto p {
+    text-align: center;
     color: #332e55;
     font-family: 'Brygada 1918', serif;
 }
@@ -334,18 +352,6 @@
 
 .contacto{
   border: red solid;
-}
-
-.card-techne {
-    width: 100%;
-    padding: 30px;
-
-    background-color: #DECAC6;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-
-    display: flex;
-    flex-direction: column;
 }
 
 

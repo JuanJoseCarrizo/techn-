@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 
+import emailjs from "emailjs-com";
+
 
 export default function FormularioControlado() {
     const [nombre, setNombre] = useState("");
@@ -8,19 +10,36 @@ export default function FormularioControlado() {
     const [mensaje, setMensaje] = useState("");
 
     const manejarSubmit = (e) => {
-        e.preventDefault();
-        alert(
-            `Datos Enviados Correctamente`
-        );
+    e.preventDefault();
+
+    const datos = {
+        nombre,
+        email,
+        mensaje
+    };
+
+    emailjs.send(
+        "service_cx8kf0w",
+        "template_1ggpz2y",
+        datos,
+        "jnZFLtmiLvORW-kqv"
+    )
+    .then(() => {
+        alert("Datos enviados correctamente");
         setNombre("");
         setEmail("");
         setMensaje("");
-    };
+    })
+    .catch((error) => {
+        console.log(error);
+        alert("Error al enviar el mensaje");
+    });
+};
 
     return (
         <div className="formularioContacto ">
             <Container className="container d-flex justify-content-center align-items-center">
-                <form className="form-contacto" onSubmit={manejarSubmit}>
+                <form className="form-contacto" onSubmit={manejarSubmit} >
 
                     <div>
                         <h2 className="text-center mt-1">Contacto</h2>
