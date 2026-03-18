@@ -344,7 +344,7 @@ const cursos = [
 /////////////////////////  PINTURA URGANO FUSION   ////////////////////////
 
   {
-    id: "urbano-fusion",
+    id: "urbano-fusion ",
     titulo: "Curso de Canto",
     subTitulo: "Técnica vocal y expresión",
     descripcion: "Aqui va la descripcion del curso, orientación y demás.",

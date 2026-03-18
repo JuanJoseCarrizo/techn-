@@ -45,7 +45,7 @@ const Navigation = () => {
               Nosotros
             </Nav.Link>
 
-            <Nav.Link className="nav-text" as={Link} to="/" onClick={() => setExpanded(false)}>
+            <Nav.Link className="nav-text" as={Link} to="/Contacto" onClick={() => setExpanded(false)}>
               Contacto
             </Nav.Link>
 

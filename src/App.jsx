@@ -4,6 +4,7 @@ import Navigation from './components/Nav'
 import Main from './components/Main'
 import Catalogo from './paginas/Catalogo'
 import FormularioControlado from './components/Formularios/FormularioControlado'
+import Contacto from './paginas/Contacto'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -21,11 +22,11 @@ function App() {
           path="/" element={
             <>
               <Main />
-              <FormularioControlado/>
             </>
           }
         />
 
+        <Route path="/Contacto" element={<Contacto />} />
         <Route path="/Catalogo" element={<Catalogo />} />
         <Route path="/curso/:id" element={<Cursos />} />
       </Routes>

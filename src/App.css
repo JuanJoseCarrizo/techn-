@@ -208,6 +208,15 @@
 
 
 
+.section-4{
+    background-image: url("/imagenes/section cursos.jpg");
+    background-size: cover;       /* que cubra todo */
+    background-position: center;  /* centrada */
+    background-repeat: no-repeat; /* que no se repita */
+    width: 100%;
+}
+
+
 
 
 /*        C A T A L O G O         */
@@ -239,13 +248,6 @@
 
 .formularioContacto{
     padding: 15% 0;
-
-    background-image: url("/imagenes/section cursos.jpg");
-    background-size: cover;       /* que cubra todo */
-    background-position: center;  /* centrada */
-    background-repeat: no-repeat; /* que no se repita */
-    width: 100%;
-
 }
 
 .formularioContacto h2{
@@ -260,6 +262,7 @@
 
 .formularioContacto label{
     color:#332e55;
+    font-family: 'Brygada 1918',serif;
 }
 
 .form-contacto{
@@ -271,6 +274,78 @@
     border-radius: 10px;
 
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+/*------------ INFO CONTACTO ------------*/
+/***************************************/
+
+
+/* wrapper igual al formulario */
+.infoContactoWrapper {
+    padding: 15% 0;
+}
+
+
+.info-contacto {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+
+    background-color: #DECAC6;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* título igual al formulario */
+.info-contacto h2 {
+    margin: 25% 0;
+    font-family: 'Brygada 1918', serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #3C3664;
+}
+
+.info-contacto p {
+    color: #332e55;
+    font-family: 'Brygada 1918', serif;
+}
+
+.info-contacto .btn-success {
+    background-color: #25D366;
+    border: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.info-contacto .btn-success:hover {
+    transform: scale(1.03);
+}
+
+
+
+.contacto{
+  border: red solid;
+}
+
+.card-techne {
+    width: 100%;
+    padding: 30px;
+
+    background-color: #DECAC6;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
 }
 
 

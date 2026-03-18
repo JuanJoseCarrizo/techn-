@@ -2,6 +2,7 @@ import React from "react"
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import CarouselInicio from "./CarouselInicio";
+import FormularioControlado from "./Formularios/FormularioControlado";
 
 const Main = () => {
     return (
@@ -35,6 +36,10 @@ const Main = () => {
             <section className="section-3">
                 <h3 className="mt-5">Nuestras clases</h3>
                 <CarouselInicio />
+            </section>
+
+            <section className="section-4">
+                <FormularioControlado/>
             </section>
 
         </main>

@@ -30,7 +30,8 @@ const Footer = () => {
           <Col md={4} className="text-center text-md-end">
             <h5>Síguenos</h5>
             <a href="https://facebook.com" className="text-white me-3"><BsFacebook size={24} /></a>
-            <a href="https://instagram.com" className="text-white me-3"><BsInstagram size={24} /></a>
+            <a href="https://www.instagram.com/techne.talleresdearte?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+            className="text-white me-3"><BsInstagram size={24} /></a>
             <a href="https://twitter.com" className="text-white"><BsTwitter size={24} /></a>
           </Col>
         </Row>
